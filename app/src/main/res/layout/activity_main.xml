@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.viktorkhon.chikurinrestaurant.MainActivity">
+
+    <TextView
+        android:id="@+id/businessName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chikurin Japanese Restaurant"
+        android:textSize="24sp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        app:srcCompat="@drawable/chikurin_restaurant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_below="@+id/businessName"
+        android:padding="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:srcCompat="@drawable/location_pin"
+                android:paddingLeft="16dp"/>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:srcCompat="@drawable/globus"/>
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:srcCompat="@drawable/phone"/>
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:srcCompat="@drawable/credit_card"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="1105 Quentin Rd, Brooklyn, NY 11229"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="chikurinsushi.com"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="(718) 336-8889"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="VISA, MasterCard, Discover"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
