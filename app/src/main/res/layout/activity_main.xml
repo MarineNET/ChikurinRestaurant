@@ -26,14 +26,16 @@
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
         android:layout_below="@+id/businessName"
-        android:padding="8dp"/>
+        android:padding="8dp"
+        android:contentDescription="Picture of sushi"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:layout_below="@+id/imageView3"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:baselineAligned="false">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -46,25 +48,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 app:srcCompat="@drawable/location_pin"
-                android:paddingLeft="16dp"/>
+                android:paddingLeft="16dp"
+                android:contentDescription="pin"
+                tools:ignore="RtlHardcoded,RtlSymmetry"/>
 
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                app:srcCompat="@drawable/globus"/>
+                app:srcCompat="@drawable/globus"
+                android:contentDescription="globus"/>
 
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                app:srcCompat="@drawable/phone"/>
+                app:srcCompat="@drawable/phone"
+                android:contentDescription="phone"/>
 
             <ImageView
                 android:id="@+id/imageView7"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                app:srcCompat="@drawable/credit_card"/>
+                app:srcCompat="@drawable/credit_card"
+                android:contentDescription="credit card"/>
         </LinearLayout>
 
         <LinearLayout
